@@ -33,7 +33,7 @@ open class BaseTimeTable : LinearLayout {
     protected var leftMenuWidthPx: Float = 0.0f
     protected var cellHeightPx: Float = 0.0f
     protected var averageWidth: Int = 0
-    protected var widthPaddingPx: Float = 0.0f
+    protected var widthPaddingPx: Float = 2.0f
 
     protected var tableStartTime: Int = 1
     protected var tableEndTime: Int = 24
