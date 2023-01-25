@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/timetable"
-    android:orientation="horizontal"
-    android:paddingHorizontal="10dp">
+    android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/borderBox"
