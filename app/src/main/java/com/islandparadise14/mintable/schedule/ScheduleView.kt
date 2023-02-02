@@ -92,7 +92,6 @@ class ScheduleView(context: Context,
             LEFT -> {
                 layoutText.leftMargin = (width.toDouble() * 0.15).toInt()
                 tableItem.gravity = Gravity.RIGHT
-                user.gravity = Gravity.CENTER
 
                 // name.layoutParams = layoutText
                 // name.gravity = Gravity.RIGHT
@@ -127,6 +126,6 @@ class ScheduleView(context: Context,
         const val RIGHT = 2
         const val ALL = 3
         private const val RADIUS = 30
-        private const val ROUND = 15
+        private const val ROUND = 8
     }
 }
