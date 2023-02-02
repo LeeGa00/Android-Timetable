@@ -113,11 +113,11 @@ class ScheduleView(context: Context,
         tableItem.background = border
 
         user.text = entity.userName
+        user.setTextColor(Color.parseColor(entity.textColor))
         // name.text = entity.scheduleName
         // room.text = entity.roomInfo
-
-        name.setTextColor(Color.parseColor(entity.textColor))
-        room.setTextColor(Color.parseColor(entity.textColor))
+        // name.setTextColor(Color.parseColor(entity.textColor))
+        // room.setTextColor(Color.parseColor(entity.textColor))
     }
 
     companion object {
