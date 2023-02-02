@@ -101,7 +101,7 @@ class ScheduleView(context: Context,
             }
             RIGHT -> {
                 layoutText.rightMargin = (width.toDouble() * 0.15).toInt()
-                name.layoutParams = layoutText
+                user.layoutParams = layoutText
 
                 border.cornerRadii = floatArrayOf(0f, 0f, cornerRadius, cornerRadius, 0f, 0f, cornerRadius, cornerRadius)
             }
