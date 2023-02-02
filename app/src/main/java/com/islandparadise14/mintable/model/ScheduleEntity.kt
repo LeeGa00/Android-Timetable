@@ -4,8 +4,7 @@ import android.view.View
 
 class ScheduleEntity(
     var originId: Int,
-    var scheduleName: String,
-    var roomInfo: String,
+    var userName: String,
     var scheduleDay: Int,
     var startTime: String,
     var endTime: String,

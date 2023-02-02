@@ -92,9 +92,11 @@ class ScheduleView(context: Context,
             LEFT -> {
                 layoutText.leftMargin = (width.toDouble() * 0.15).toInt()
                 tableItem.gravity = Gravity.RIGHT
-                name.layoutParams = layoutText
-                name.gravity = Gravity.RIGHT
-                room.gravity = Gravity.RIGHT
+                user.gravity = Gravity.CENTER
+
+                // name.layoutParams = layoutText
+                // name.gravity = Gravity.RIGHT
+                // room.gravity = Gravity.RIGHT
 
                 border.cornerRadii = floatArrayOf(cornerRadius, cornerRadius, 0f, 0f, cornerRadius, cornerRadius, 0f, 0f)
             }
@@ -111,8 +113,9 @@ class ScheduleView(context: Context,
 
         tableItem.background = border
 
-        name.text = entity.scheduleName
-        room.text = entity.roomInfo
+        user.text = entity.userName
+        // name.text = entity.scheduleName
+        // room.text = entity.roomInfo
 
         name.setTextColor(Color.parseColor(entity.textColor))
         room.setTextColor(Color.parseColor(entity.textColor))
