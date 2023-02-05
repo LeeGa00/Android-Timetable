@@ -123,6 +123,6 @@ class ScheduleView(context: Context,
         const val RIGHT = 2
         const val ALL = 3
         private const val RADIUS = 30
-        private const val ROUND = 8
+        private const val ROUND = 6
     }
 }
