@@ -4,7 +4,7 @@
     android:id="@+id/tableItem"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
-    android:elevation="0.5dp"
+    android:elevation="1dp"
     android:padding="3dp"
     android:orientation="vertical">
 
