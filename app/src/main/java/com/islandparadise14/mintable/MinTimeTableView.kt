@@ -155,6 +155,7 @@ class MinTimeTableView : BaseTimeTable {
             return
         }
         super.calculateTime(super.schedules)
+        super.changeDayValue(super.schedules)
 
         com.islandparadise14.mintable.utils.removeViews(
             arrayOf(

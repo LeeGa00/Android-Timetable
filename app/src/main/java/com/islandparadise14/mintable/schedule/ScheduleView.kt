@@ -106,6 +106,7 @@ class ScheduleView(context: Context,
                 border.cornerRadii = floatArrayOf(0f, 0f, cornerRadius, cornerRadius, 0f, 0f, cornerRadius, cornerRadius)
             }
             ALL -> {
+                tableItem.gravity = Gravity.CENTER
                 border.cornerRadius = roundRadius
             }
         }
@@ -114,10 +115,6 @@ class ScheduleView(context: Context,
 
         user.text = entity.userName
         user.setTextColor(Color.parseColor(entity.textColor))
-        // name.text = entity.scheduleName
-        // room.text = entity.roomInfo
-        // name.setTextColor(Color.parseColor(entity.textColor))
-        // room.setTextColor(Color.parseColor(entity.textColor))
     }
 
     companion object {

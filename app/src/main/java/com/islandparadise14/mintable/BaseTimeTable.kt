@@ -79,7 +79,6 @@ open class BaseTimeTable : LinearLayout {
     }
 
 
-
     @SuppressLint("Recycle", "CustomViewStyleable")
     private fun initView(context: Context, attrs: AttributeSet?) {
         tableContext = context
@@ -124,8 +123,8 @@ open class BaseTimeTable : LinearLayout {
     }
 
     protected fun calculateTime (schedules: ArrayList<ScheduleEntity>) {
-        tableStartTime =
-            getHour(schedules[0].startTime)
+        tableStartTime = 1
+            // getHour(schedules[0].startTime)
         tableEndTime = 25
         schedules.map {entity ->
             if(getHour(entity.startTime) < tableStartTime)
@@ -139,6 +138,11 @@ open class BaseTimeTable : LinearLayout {
         }
     }
 
+    protected fun changeDayValue (schedules: ArrayList<ScheduleEntity>) {
+        schedules.map {entity ->
+            entity.scheduleDay = entity.scheduleDay % 7
+        }
+    }
     protected fun recycleTimeCell () {
         for(i in 0 until (tableEndTime - tableStartTime)) {
             dayList.forEach { day -> val j: Int = dayList.indexOf(day)
