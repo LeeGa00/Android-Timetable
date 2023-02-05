@@ -11,14 +11,14 @@
         android:id="@+id/borderBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F1F1F1"
+        android:background="#CEFBFBFB"
         tools:layout_width="match_parent">
 
         <LinearLayout
             android:id="@+id/leftMenu"
             android:layout_width="30dp"
             android:layout_height="600dp"
-            android:background="#F1F1F1"
+            android:background="#CEFBFBFB"
             android:orientation="vertical">
 
             <LinearLayout
@@ -46,7 +46,7 @@
             <LinearLayout
                 android:id="@+id/topMenu"
                 android:layout_width="match_parent"
-                android:background="#F1F1F1"
+                android:background="#CEFBFBFB"
                 android:layout_height="30dp"
                 android:orientation="horizontal">
 
@@ -55,7 +55,7 @@
             <FrameLayout
                 android:id="@+id/mainTable"
                 android:layout_width="match_parent"
-                android:background="#F1F1F1"
+                android:background="#CEFBFBFB"
                 android:layout_height="match_parent">
 
                 <TextView
