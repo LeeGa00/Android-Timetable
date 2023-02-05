@@ -21,13 +21,11 @@
             android:background="#dddddd"
             android:orientation="vertical">
 
-
             <LinearLayout
                 android:id="@+id/zeroPoint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
             </LinearLayout>
 
             <LinearLayout
@@ -36,7 +34,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center" >
-
             </LinearLayout>
         </LinearLayout>
 
