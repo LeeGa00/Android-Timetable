@@ -42,8 +42,8 @@ class MinTimeTableView : BaseTimeTable {
     }
 
     fun initTable(dayList: Array<String>) {
-        super.tableStartTime = 1
-        super.tableEndTime = 25
+        super.tableStartTime = 0
+        super.tableEndTime = 24
         super.dayList = dayList
 
         super.topMenuHeightPx = dpToPx(

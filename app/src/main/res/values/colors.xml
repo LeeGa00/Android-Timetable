@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="white">#ffffff</color>
-    <color name="default_line">#dddddd</color>
+    <color name="default_line">#F3F3F3</color>
 
     <color name="item_red">#FE0000</color>
     <color name="item_orange">#FFAD01</color>

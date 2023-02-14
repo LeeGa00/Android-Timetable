@@ -35,8 +35,8 @@ open class BaseTimeTable : LinearLayout {
     protected var averageWidth: Int = 0
     protected var widthPaddingPx: Float = 0.0f
 
-    protected var tableStartTime: Int = 1
-    protected var tableEndTime: Int = 25
+    protected var tableStartTime: Int = 0
+    protected var tableEndTime: Int = 24
 
     protected var dayList: Array<String> = arrayOf()
 
@@ -123,9 +123,9 @@ open class BaseTimeTable : LinearLayout {
     }
 
     protected fun calculateTime (schedules: ArrayList<ScheduleEntity>) {
-        tableStartTime = 1
+        tableStartTime = 0
             // getHour(schedules[0].startTime)
-        tableEndTime = 25
+        tableEndTime = 24
         schedules.map {entity ->
             if(getHour(entity.startTime) < tableStartTime)
                 tableStartTime =
@@ -133,8 +133,8 @@ open class BaseTimeTable : LinearLayout {
             if(getHour(entity.endTime) >= tableEndTime)
                 tableEndTime = getHour(entity.endTime) + 1
         }
-        if ((tableEndTime - tableStartTime) < 24) {
-            tableEndTime = tableStartTime + 24
+        if ((tableEndTime - tableStartTime) < 23) {
+            tableEndTime = tableStartTime + 23
         }
     }
 
